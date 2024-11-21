@@ -24,8 +24,99 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header"></header>
     <main>
+      <section class="hero-section section">
+        <div class="hero-container container">
+          <h1 class="hero-title">
+            Hello, I am </br>
+            <span class="hero-title hero-accent brand-color"
+              >Fullstack developer</span
+            >
+          </h1>
+          <div class="hero-image">will be a photo</div>
+
+          <div class="hero-btn-box">
+            <svg class="arrow-icon" width="30" height="16">
+              <use href="./images/icons.svg#icon-arrow-1"></use>
+            </svg>
+            <p class="arrow-text">Order the project</p>
+            <button class="hero-btn" type="button"></button>
+          </div>
+          <div class="hero-text-box">
+            <p class="hero-text">
+            I work with people all over the world to create
+            <span class="brand-color">impressive</span> and
+            <span class="brand-color">functional websites</span> that reflect
+            each client’s unique personality.
+          </p>
+          </div>
+        </div>
+      </section>
+      <section class="media-section">
+        <div class="media-container container">
+          <a class="media-link" target="_blank" href="#">Instagram</a>
+          <a class="media-link" target="_blank" href="#">Facebook</a>
+          <a class="media-link" target="_blank" href="#">Linkedin</a>
+          <a class="media-link" target="_blank" href="#">GitHub</a>
+        </div>
+      </section>
+      <section class="about-section">
+        <div class="about-container container">
+          <h2 class="about-main-title">About <span class="about-main-title brand-color">me</span>
+          </h2>
+          <div class="about-box">
+            <img
+                srcset="
+                  ./images/about-me-photo.jpg 1x,
+                  ./images/about-me-photo.jpg 2x"
+                class="about-photo"
+                src="./images/about-me-photo.jpg"
+                alt="About me photo"
+                width="320"
+                height="374"
+              />
+          </div>
+          <div class="about-box">
+            <h3 class="about-title">BIO</h3>
+            <ul class="about-list">
+              <li class="about-item">
+                <p class="about-text">I'm Lloyd Jefferson, a talented programmer specializing in software development. My expertise spans various programming languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking unconventional and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle even the most challenging tasks.</p>
+              </li>
+              <li class="about-item">
+                <p class="about-text">Adaptable to both independent and team-oriented work, I collaborate seamlessly with colleagues, exchanging ideas and finding optimal solutions. My professional maturity enables me to navigate challenges and stressful situations with a calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I actively engage in studying new technologies and practices to stay current with the latest innovations in the field.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-box">
+            <h3 class="about-title">EDUCATION</h3>
+            <ul class="about-list">
+              <li class="about-item">
+                <p class="about-text">2018 - 2019  / Frontend Development Diploma, GoIT IT School, New York</p>
+              </li>
+              <li class="about-item">
+                <p class="about-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York</p>
+              </li>
+              <li class="about-item">
+                <p class="about-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-box">
+            <h3 class="about-title">ROLE</h3>
+            <ul class="about-list">
+              <li class="about-item">
+                <p class="about-text">Frontend development</p>
+            </li>
+            <li class="about-item">
+                <p class="about-text">HeadlessCMS, Wordpress</p>
+            </li>
+            <li class="about-item">
+                <p class="about-text">Blender (enjoy)</p>
+            </li>
+          </ul>
+          </div> 
+        </div>
+      </section>
       <section class="section benefits-section">
         <div class="container benefits-container">
           <div class="benefits-title-container">
@@ -101,6 +192,6 @@
       </section>
     </main>
     <footer class="main-footer"></footer>
-    <!-- <script src="/.main.js" type="module"></script> -->
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
