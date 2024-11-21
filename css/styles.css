@@ -1,4 +1,10 @@
 /* ----base---- */
+@font-face {
+  font-display: swap;
+  font-family: "Impact";
+  font-weight: 400;
+  src: url("../fonts/impact.ttf") format("ttf");
+}
 :root {
   --color-black: #292929;
   --color-accent-green: #00b068;
@@ -9,20 +15,20 @@
   --color-error: #e74a3b;
   --color-hover-grey: #bbbbbb;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   color: var(--color-black);
   background-color: var(--color-white);
   margin: 0;
 }
+
 p,
 h1,
 h2,
 h3 {
   margin: 0;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -55,293 +61,47 @@ img {
   overflow: hidden;
 }
 
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+}
 .logo {
   font-family: "Impact", sans-serif;
   font-size: 24px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.section {
+  padding: 40px 0;
+}
 .brand-color {
   color: var(--color-accent-green);
 }
-.container {
-  min-width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-  width: 100%;
-}
+
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
     padding: 0 32px;
+  }
+  .section {
+    padding: 62px 0;
   }
   .logo {
     font-size: 32px;
     letter-spacing: 0.05em;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 0 32px;
+  }
+  .section {
+    padding: 82px 0;
   }
 }
-
-/* Header */
-.nav-header {
-  display: none;
-}
-.header {
-  padding: 20px 0;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.burger-button {
-  display: block;
-  border: none;
-  width: 24px;
-  height: 24px;
-  background: transparent;
-  padding: 0;
-  fill: var(--color-black);
-}
-
-@media screen and (min-width: 768px) {
-  .burger-button {
-    display: none;
-  }
-  .header {
-    padding: 32px 0;
-  }
-  .nav-header {
-    display: flex;
-  }
-  .nav-list {
-    display: flex;
-
-    gap: 40px;
-  }
-  .link {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: var(--color-black);
-    transition: color 0.3s;
-  }
-  .nav-link:hover,
-  .nav-link:focus {
-    color: var(--color-accent-green);
-  }
-}
-@media screen and (min-width: 1158px) {
-  .header {
-    max-width: 1280px;
-  }
-}
-/* Hero */
-.hero-section {
-  padding: 96px 0 56px;
-}
-.hero-title {
-  font-family: "Impact", sans-serif;
-  font-size: 64px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.hero-accent {
-  color: var(--color-accent-green);
-}
-.hero-image {
-  display: none;
-}
-.hero-btn-box {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 40px;
-  position: relative;
-}
-.hero-btn {
-  background-color: var(--color-light-accent);
-  min-width: 165px;
-  height: 92px;
-  border: none;
-  border-radius: 16px;
-  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--color-accent-green);
-}
-.arrow-text {
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-black);
-  position: absolute;
-  content: "";
-  top: 32px;
-  left: 44px;
-}
-.arrow-icon {
-  stroke: 2px;
-  fill: var(--color-accent-green);
-}
-
-.hero-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .hero-section {
-    max-width: 768px;
-    padding: 72px 0 64px;
-  }
-  .hero-title {
-    font-size: 136px;
-    line-height: 1.15;
-    margin-bottom: 60px;
-  }
-  .hero-btn-box {
-    justify-content: start;
-  }
-  .arrow-icon {
-    margin-right: 48px;
-  }
-  .hero-text {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .hero-section {
-    max-width: 1248px;
-    padding: 168px 0 116px;
-  }
-  .hero-container {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  .hero-title {
-    line-height: 1.15;
-    margin-bottom: 80px;
-  }
-  .hero-image {
-    background-image: url(../images/developer-photo.jpg);
-    border-radius: 16px;
-    width: 108px;
-    height: 108px;
-    display: flex;
-    position: absolute;
-    top: 20px;
-    right: 465px;
-  }
-  .hero-btn-box {
-    width: 100%;
-    max-width: 416px;
-  }
-  .arrow-icon {
-    margin-right: 48px;
-  }
-  .hero-text-box {
-    width: 100%;
-    max-width: 592px;
-  }
-  .hero-text {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-/* Media */
-.media-section {
-  padding: 32px 0;
-  background-color: var(--color-light-grey);
-}
-.media-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 24px;
-}
-.media-link {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-black);
-}
-@media screen and (min-width: 768px) {
-  .media-section {
-    max-width: 768px;
-    padding: 40px 0;
-  }
-  .media-container {
-    display: block;
-  }
-  .media-link {
-    margin-right: 40px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .media-section {
-    max-width: 1248px;
-  }
-  /* About */
-  .about-section {
-    padding-top: 80px;
-    margin-bottom: 80px;
-  }
-  .about-main-title {
-    font-family: "Impact", sans-serif;
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-  }
-  .about-box {
-    border-radius: 16px;
-  }
-  .about-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 32px;
-  }
-  .about-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-  }
-}
-.techskils-title {
-  margin-bottom: 100px;
-}
-.main-footer {
-  margin-top: 100px;
-}
-
-/* ------------------------- */
-/* ------------------------- */
 /* ----Benefits 320-360---- */
 .animate-on-scroll {
   opacity: 0;
@@ -352,7 +112,12 @@ img {
   opacity: 1;
   transform: scale(1);
 }
-
+.section {
+  padding: 40px 0;
+}
+.benefits-background-container {
+  display: none;
+}
 .benefits-title {
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -362,18 +127,23 @@ img {
   text-transform: uppercase;
   color: var(--color-black);
   margin-bottom: 40px;
+  text-align: left;
 }
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
+.benefits-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .icon {
   border-radius: 8px;
   width: 48px;
   height: 48px;
   background-color: var(--color-light-accent);
-  margin-bottom: 16px;
   stroke-width: 2px;
   stroke-linejoin: round;
   stroke: var(--color-accent-green);
@@ -386,7 +156,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-black);
-  margin-bottom: 16px;
 }
 .benefits-list-text {
   font-family: "Poppins", sans-serif;
@@ -399,78 +168,10 @@ img {
 
 /* ----Benefits 768---- */
 
-/*@media screen and (min-width: 768px) {
-  .benefits-title {
-    font-size: 108px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    color: var(--color-black);
-    margin-bottom: 0;
-  }
-  .benefits-list-container {
-    width: 100%;
-  }
-
-  .benefits-item {
-    width: calc((100% - 32px) / 2);
-  }
-  .benefits-item:nth-child(1) {
-    flex: 0 0 100%;
-    padding-left: 382px;
-  }
-  .benefits-item:nth-child(4) {
-    flex: 0 0 100%;
-    padding-right: 382px;
-  }
-
-  .benefits-item:nth-child(2),
-  .benefits-item:nth-child(3) {
-    flex: 0 0 45.45%;
-    margin: 0;
-  }
-  .benefits-item:nth-child(3) {
-    margin-left: auto;
-  }
-
-  .benefits-list-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-black);
-    margin-bottom: 16px;
-  }
-  .benefits-list-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: var(--color-black);
-  }
-}
-/* ----Benefits 1280---- */
-/*@media screen and (min-width: 1280px) {
-  .benefits-title-container {
-    display: flex;
-  }
-  .benefits-background-container {
-    width: 100%;
-    height: 100%;
-    max-width: 536px;
-    max-height: 415px;
-    background-image: url(../images/decor3.png);
-    background-color: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}/*
-/* ------------------------ */
-/* ------position-version-- */
 @media screen and (min-width: 768px) {
+  .section {
+    padding: 62px 0;
+  }
   .benefits-title {
     font-size: 108px;
     line-height: 1.15;
@@ -480,20 +181,16 @@ img {
   }
   .benefits-list-container {
     width: 100%;
+    margin-top: 240px;
     position: relative;
-    padding-top: 240px;
   }
-
   .benefits-item {
     width: calc((100% - 32px) / 2);
   }
   .benefits-item:nth-child(1) {
     position: absolute;
-    top: 0;
+    top: -240px;
     right: 0;
-  }
-  .benefits-item:nth-child(4) {
-    flex: 0 0 50%;
   }
 
   .benefits-list-title {
@@ -515,15 +212,34 @@ img {
     color: var(--color-black);
   }
 }
+
 /* ----Benefits 1280---- */
+
 @media screen and (min-width: 1280px) {
+  .section {
+    padding: 82px 0;
+  }
   .benefits-title-container {
     display: flex;
+    justify-content: space-between;
+  }
+  .benefits-title-box {
+    width: 100%;
+    max-width: 704px;
+  }
+  .benefits-list-title {
+    line-height: 1.15;
+    letter-spacing: 0.02em;
   }
   .benefits-background-container {
-    width: 100%;
-    background-image: url(../images/decor3.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+  }
+  .img-decor {
+    position: absolute;
+    top: -14px;
+    right: 24px;
+  }
+  .benefits-item {
+    width: calc((100% - 64px) / 3);
   }
 }
