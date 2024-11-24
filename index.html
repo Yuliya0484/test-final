@@ -37,27 +37,22 @@
             <picture>
               <source
                 media="(min-width: 1280px)"
-                srcset="./images/man-img.jpg 1x, ./images/man-img.jpg 2x"
-                width="592px"
-                height="444px"
+                srcset="{=$man-img-path} 1x, {=$man-2x-img-path} 2x"
               />
-              <img
-                src="./images/man-img.jpg"
-                class="hero-image"
-                alt="Developer"
-              />
+              <img src="{=$man-img-path}" class="hero-image" alt="Developer" />
             </picture>
           </div>
           <img
             class="top-points"
-            src="./images/decor-1.png"
+            src="{=$decor-1-img-path}"
             alt="background-drops"
           />
+
           <div class="btn-text-box">
             <div class="hero-btn-box">
               <img
                 class="decor-points-bottom"
-                src="./images/decor-2.png"
+                src="{=$decor-2-img-path}"
                 alt="background-drops"
               />
               <svg class="arrow-icon" width="30" height="16">
