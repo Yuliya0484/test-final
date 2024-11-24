@@ -188,6 +188,10 @@ img.decor-points-bottom {
   line-height: 1.5;
   color: var(--color-black);
 }
+.media-link:hover,
+.media-link:focus {
+  color: var(--color-accent-green);
+}
 /*---- Hero 768----*/
 @media screen and (min-width: 768px) {
   img.decor-points-bottom {
