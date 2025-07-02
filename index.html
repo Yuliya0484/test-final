@@ -25,211 +25,88 @@
   </head>
   <body>
     <main>
-      <section class="section hero-section">
-        <div class="hero-container container">
-          <div class="hero-title-box">
-            <h1 class="hero-title dark-theme">
-              Hello, I am
-              <span class="hero-title hero-accent brand-color"
-                >Fullstack developer</span
-              >
-            </h1>
+      <section class="section recipeSection">
+        <div class="container">
+          <div class="imageBox">
+            <h2 class="mainRecipeTitle">French Omelette</h2>
             <picture>
               <source
                 media="(min-width: 1280px)"
-                srcset="{=$man-img-path} 1x, {=$man-2x-img-path} 2x"
+                srcset="./images/Image Container.png 1x, ./images/Image Container.png 2x"
               />
-              <img src="{=$man-img-path}" class="hero-image" alt="Developer" />
+              <img
+                src="./images/Image Container.png"
+                class="recipeImage"
+                alt="Picture of the recipe"
+              />
             </picture>
           </div>
-          <img
-            class="top-points"
-            src="{=$decor-1-img-path}"
-            alt="background-drops"
-          />
-
-          <div class="btn-text-box">
-            <div class="hero-btn-box">
-              <img
-                class="decor-points-bottom"
-                src="{=$decor-2-img-path}"
-                alt="background-drops"
-              />
-              <svg class="arrow-icon" width="30" height="16">
-                <use href="./images/icons.svg#arrow-icon"></use>
-              </svg>
-              <a class="arrow-text dark-theme" href="#hero-btn"
-                >Order the project</a
-              >
-              <a class="hero-btn" id="hero-btn" href="#work-together"></a>
+          <div class="flexBox">
+            <div class="generalBox">
+              <div class="generalInfo">
+                <h3 class="recipeTitle">General informations</h3>
+                <p class="infoText">
+                  Category: <span class="text">Breakfest</span>
+                </p>
+                <p class="infoText">
+                  Cooking time: <span class="text">5-7 minutes</span>
+                </p>
+                <p class="infoText">
+                  Caloric content:
+                  <span class="text">Approximately 200 kcal per serving</span>
+                </p>
+              </div>
+              <button type="button" class="saveBtn">Save</button>
             </div>
-            <p class="hero-text dark-theme">
-              I work with people all over the world to create
-              <span class="brand-color">impressive</span> and
-              <span class="brand-color">functional websites</span> that reflect
-              each client’s unique personality.
-            </p>
-          </div>
-        </div>
-        <ul class="media-list">
-          <li>
-            <a
-              class="media-link dark-theme"
-              target="_blank"
-              href="https://www.instagram.com/goitclub/"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              class="media-link dark-theme"
-              target="_blank"
-              href="https://www.facebook.com/goITclub/"
-              >Facebook</a
-            >
-          </li>
-
-          <li>
-            <a
-              class="media-link dark-theme"
-              target="_blank"
-              href="https://www.linkedin.com/school/goit-start-your-career-in-it"
-              >Linkedin</a
-            >
-          </li>
-
-          <li>
-            <a
-              class="media-link dark-theme"
-              target="_blank"
-              href="https://github.com/vovaVat/Portfolio-2.0"
-              >GitHub</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <section class="section benefits-section">
-        <div class="container benefits-container">
-          <div class="benefits-title-container">
-            <div class="benefits-title-box">
-              <h2 class="benefits-title">
-                <span class="brand-color">Benefits </span>of working with me
-              </h2>
+            <div class="aboutBox">
+              <div class="aboutInfo">
+                <h3 class="recipeTitle aboutTitle">About recipe</h3>
+                <p class="aboutText">
+                  A French omelette is known for its soft, tender texture and
+                  lack of browning on the outside. It’s simple but requires a
+                  bit of attention to achieve the perfect consistency. It’s
+                  ideal for a light yet satisfying breakfast.
+                </p>
+              </div>
+              <div class="ingredientsBox">
+                <h3 class="recipeTitle ingrTitle">Ingredients:</h3>
+                <ul class="ingredientsList">
+                  <li class="ingredientsItem">Eggs — 3</li>
+                  <li class="ingredientsItem">Butter — 1 tbsp (about 15 g)</li>
+                  <li class="ingredientsItem">Salt — a pinch</li>
+                  <li class="ingredientsItem">Black pepper — to taste</li>
+                  <li class="ingredientsItem">
+                    Fresh herbs (parsley, dill, or green onions) — for garnish
+                    (optional)
+                  </li>
+                </ul>
+              </div>
+              <div class="preparationBox">
+                <h3 class="recipeTitle preparationTitle">Preparation Steps:</h3>
+                <p class="aboutText">
+                  Crack the eggs into a small bowl. Add a pinch of salt and a
+                  bit of black pepper. Whisk the eggs with a fork or whisk until
+                  smooth and slightly foamy. Place a small non-stick skillet
+                  over medium heat and add the butter. Let the butter melt
+                  completely, being careful not to let it brown. Pour the beaten
+                  eggs into the skillet. Allow them to set slightly around the
+                  edges, then gently stir the eggs, folding them toward the
+                  center to keep the omelette soft and tender. Pour the beaten
+                  eggs into the skillet. Allow them to set slightly around the
+                  edges, then gently stir the eggs, folding them toward the
+                  center to keep the omelette soft and tender. When the omelette
+                  is almost set but still slightly soft in the center, gently
+                  lift one side with a spatula and fold it in half. The omelette
+                  should remain light and creamy. Transfer the omelette to a
+                  plate, sprinkle with fresh herbs if desired, and serve
+                  immediately while it’s warm and tender.
+                </p>
+              </div>
             </div>
-            <div class="benefits-background-container">
-              <img
-                class="img-decor"
-                src="./images/decor3.png"
-                alt="background-points"
-                width="536"
-                height="415"
-              />
-            </div>
-          </div>
-          <div class="benefits-list-container">
-            <ul class="benefits-list">
-              <li class="benefits-item animate-on-scroll">
-                <div class="benefits-text-box first-box">
-                  <svg class="icon morph" width="24" height="24">
-                    <use href="./images/icons.svg#icon-arrow-1"></use>
-                  </svg>
-                  <h3 class="benefits-list-title">Expertise</h3>
-                  <p class="benefits-list-text">
-                    With extensive experience in development, I have a deep
-                    understanding of programming and website development.
-                  </p>
-                </div>
-              </li>
-              <li class="benefits-item animate-on-scroll">
-                <div class="benefits-text-box">
-                  <svg class="icon morph" width="24" height="24">
-                    <use href="./images/icons.svg#icon-arrow-1"></use>
-                  </svg>
-                  <h3 class="benefits-list-title">Communication</h3>
-                  <p class="benefits-list-text">
-                    Understanding your needs and wants is my priority and I am
-                    always available for discussions and open to corrections.
-                  </p>
-                </div>
-              </li>
-              <li class="benefits-item animate-on-scroll">
-                <div class="benefits-text-box">
-                  <svg class="icon morph" width="24" height="24">
-                    <use href="./images/icons.svg#icon-arrow-1"></use>
-                  </svg>
-                  <h3 class="benefits-list-title">Art</h3>
-                  <p class="benefits-list-text">
-                    Thanks to my creative nature, I am ready to accept
-                    challenges and help you bring your ideas to life.
-                  </p>
-                </div>
-              </li>
-              <li class="benefits-item animate-on-scroll">
-                <div class="benefits-text-box">
-                  <svg class="icon morph" width="24" height="24">
-                    <use href="./images/icons.svg#icon-arrow-1"></use>
-                  </svg>
-                  <h3 class="benefits-list-title">Urgent execution</h3>
-                  <p class="benefits-list-text">
-                    I understand how important time is to you. Ready to work
-                    quickly and efficiently, without reducing the quality of
-                    work.
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-box">
-          <a class="footer-logo" href="./index.html"
-            >Lloyd<span class="logo-accent">Jefferson.</span>
-          </a>
-          <ul class="footer-list">
-            <li>
-              <a
-                class="link"
-                href="https://www.instagram.com/goitclub/"
-                target="_blank"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                class="link"
-                href="https://www.facebook.com/goITclub/  "
-                target="_blank"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                class="link"
-                href="https://www.linkedin.com/school/goit-start-your-career-in-it "
-                target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li>
-              <a
-                class="link"
-                href="https://github.com/vovaVat/Portfolio-2.0/tree/main"
-                target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="copyright-box">
-          <p class="copyright-text copy">&copy; Copyright 2024.</p>
-          <p class="copyright-text">Made by LloydJefferson</p>
-        </div>
-      </div>
-    </footer>
     <script src="./main.js" type="module"></script>
   </body>
 </html>
